@@ -2,11 +2,17 @@ $(function () {
     $("#footer").load("footer.html");
 });
 
+// $("#test").click(function () {
+//     $("#submitbtn").removeClass("disabled");
+// });
+
 
 // verify
 let canvas = document.getElementById('canvas')//畫布物件
-
 let show_num = []//裝驗證碼的陣列
+
+let isVerify = false;
+
 //產生隨機顏色
 function randomColor() {
     var r = Math.floor(Math.random() * 256);
@@ -69,16 +75,22 @@ canvas.onclick = () => {
     console.log(show_num);
 }
 
-function myFunction() {
-    // Get the value of the input field with id="numb"
+$("#login_code").keyup(function () {
+
     let x = document.getElementById("login_code").value;
-    // If x is Not a Number or less than one or greater than 10
+    let digitStr = show_num.join('');
+
     let text;
-    var digitStr = show_num.join('');
-    if (x != digitStr) {
-        text = "Input not valid";
-    } else {
+    console.log("digitStr" + digitStr);
+    console.log("x" + x);
+    document.getElementById("demo").innerHTML = text;
+    if (x == digitStr) {
+        $("#submitbtn").removeClass("disabled");
         text = "Input OK";
+    } else {
+        $("#submitbtn").addClass("disabled");
+        text = "Input not valid";
     }
     document.getElementById("demo").innerHTML = text;
-}
+
+});
