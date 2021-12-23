@@ -15,18 +15,25 @@
 
 
 */
+
 .fa {
-width: 30px;
-height: 30px;
-border-radius: 50%;
-
-
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
 
 .fa-facebook {
-  background: #3B5998;
-  color: white;
-  display:grid;
-align-items: center;
-text-align: center;
-} 
+    background: #3B5998;
+    color: white;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+#canvas {
+    width: 100px;
+    height: 35px;
+    display: inline-block;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+}
