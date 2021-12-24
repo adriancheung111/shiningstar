@@ -1,17 +1,7 @@
-.nav-link{
-  cursor: pointer;
-}
-
-.nav-link:hover{
-  cursor: pointer;
-  color: blue !important;
-
-}
-/* 
 #canvas {
     width: 100px;
     height: 35px;
     display: inline-block;
     border: 1px solid #c9c9c9;
     border-radius: 5px;
-} */
+}
