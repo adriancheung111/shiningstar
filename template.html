@@ -11,6 +11,7 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./contactus.css">
 
 </head>
 
@@ -19,8 +20,7 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light"
     style="background-color: white; box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.19);">
     <a class="navbar-brand" href="./index">
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgLjU4N2wzLjY2OCA3LjU2OCA4LjMzMiAxLjE1MS02LjA2NCA1LjgyOCAxLjQ4IDguMjc5LTcuNDE2LTMuOTY3LTcuNDE3IDMuOTY3IDEuNDgxLTguMjc5LTYuMDY0LTUuODI4IDguMzMyLTEuMTUxeiIvPjwvc3ZnPg=="
-            width="20" height="20" style="margin-bottom: 7px" alt=""> Shining Stars
+        <img src="./png/logo.png" width="145px" height="50px"  style="margin-bottom: 7px" alt=""> 
     </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -33,23 +33,13 @@
                 <a class="nav-link" href="./index">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="./teacher">Teachers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./freeapply">免費試堂/報名</a>
             </li>
             <li class="nav-item active" style="font-weight: bold;">
                 <a class="nav-link" href="./contactus">Contact Us</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Dropdown link
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
             </li>
         </ul>
     </div>
@@ -57,8 +47,47 @@
 <!-- end navbar -->
 
 <div class="container" style="margin-top: 90px;">
+    <p style="font-size: 5vw;">Location</p>
 
-    <!-- -->
+    <!-- <div id="googleMap" style="width:100%;height:400px;"></div> -->
+    <iframe width="100%" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ86wdpxH2AzQRK8fP_0xoU30&key=AIzaSyA8kYhu05kNvMkkHgFGcE9ZKnhDYG9dbu8"></iframe>
+
+    <hr>
+    <p style="font-size: 5vw;">Contact</p>
+
+    <form accept-charset="UTF-8" action="https://getform.io/f/be02abce-046d-48e1-b893-dbfd64bac9c5" method="POST">
+        <div class="row">
+            <div class="form-group col-6">
+                <label for="exampleInputPassword1">Name</label>
+                <input type="text" class="form-control" name="name" id="nameText" placeholder="name"
+                    required="required">
+            </div>
+            <div class="form-group col-6">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" name="email" id="emailText" placeholder="Email"
+                    required="required">
+            </div>
+
+            <div class="form-group col-12">
+                <label for="exampleInputPassword1">Contact</label>
+                <textarea class="form-control" name="message" id="contentText" placeholder="輸入內容..." rows="10"
+                    required="required"></textarea>
+            </div>
+        </div>
+        <!-- <div class="login_code_box"> -->
+        <div class="login_code">
+            <input type="text" class="form-control" name="login_code" id="login_code" placeholder="請輸入驗證碼"
+                required="required" style="width: 125px;">
+
+            <canvas id="canvas" style="margin-top: 10px;"> </canvas>
+        </div>
+        <!-- <button type="button" id="test">Submit</button> -->
+        <p id="demo"></p>
+
+        <button type="submit" id="submitbtn" class="btn btn-primary disabled">發送</button>
+        <button type="reset" class="btn btn-default">重設</button>
+        <!-- </div> -->
+    </form>
 
 
 </div>
