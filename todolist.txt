@@ -1,0 +1,2 @@
+1.update navbar of every page
+2.update template page
