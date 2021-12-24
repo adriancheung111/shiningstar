@@ -12,7 +12,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./contactus.css">
+    <style>
+        .fa {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
 
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+            display: grid;
+            align-items: center;
+            text-align: center;
+        }
+
+        .fa-instagram {
+            background: #ea4c89;
+            color: white;
+            display: grid;
+            align-items: center;
+            text-align: center;
+        }
+
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+            display: grid;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
 </head>
 
 
@@ -20,7 +50,7 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light"
     style="background-color: white; box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.19);">
     <a class="navbar-brand" href="./index">
-        <img src="./png/logo.png" width="145px" height="50px"  style="margin-bottom: 7px" alt=""> 
+        <img src="./png/logo.png" width="145px" height="50px" style="margin-bottom: 7px" alt="">
     </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -47,52 +77,68 @@
 <!-- end navbar -->
 
 <div class="container" style="margin-top: 90px;">
-    <p style="font-size: 5vw;">Location</p>
-
-    <!-- <div id="googleMap" style="width:100%;height:400px;"></div> -->
-    <iframe width="100%" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ86wdpxH2AzQRK8fP_0xoU30&key=AIzaSyA8kYhu05kNvMkkHgFGcE9ZKnhDYG9dbu8"></iframe>
-
-    <hr>
-    <p style="font-size: 5vw;">Contact</p>
-
-    <form accept-charset="UTF-8" action="https://getform.io/f/be02abce-046d-48e1-b893-dbfd64bac9c5" method="POST">
-        <div class="row">
-            <div class="form-group col-6">
-                <label for="exampleInputPassword1">Name</label>
-                <input type="text" class="form-control" name="name" id="nameText" placeholder="name"
-                    required="required">
-            </div>
-            <div class="form-group col-6">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" name="email" id="emailText" placeholder="Email"
-                    required="required">
-            </div>
-
-            <div class="form-group col-12">
-                <label for="exampleInputPassword1">Contact</label>
-                <textarea class="form-control" name="message" id="contentText" placeholder="輸入內容..." rows="10"
-                    required="required"></textarea>
-            </div>
-        </div>
-        <!-- <div class="login_code_box"> -->
-        <div class="login_code">
-            <input type="text" class="form-control" name="login_code" id="login_code" placeholder="請輸入驗證碼"
-                required="required" style="width: 125px;">
-
-            <canvas id="canvas" style="margin-top: 10px;"> </canvas>
-        </div>
-        <!-- <button type="button" id="test">Submit</button> -->
-        <p id="demo"></p>
-
-        <button type="submit" id="submitbtn" class="btn btn-primary disabled">發送</button>
-        <button type="reset" class="btn btn-default">重設</button>
-        <!-- </div> -->
-    </form>
 
 
 </div>
 
-<div id="footer"></div>
+
+<!-- start Footer -->
+<footer class="page-footer font-small" style="background-color: rgb(100, 100, 100);color: white;">
+
+    <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left mt-3 ">
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="font-weight-bold">Shining Stars Learning Institute 星仔教育</h6>
+                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+                consectetur
+                adipisicing elit.
+            </div>
+            <!-- Grid column -->
+
+            <hr class="w-100 clearfix d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase  font-weight-bold">Contact</h6>
+                <i class="fa fa-home"></i> Hong Kong, NY 10012, HK</br>
+                <i class="fa fa-envelope"></i> shiningstar@gmail.com</br>
+                <i class="fa fa-phone"></i> +852 5398 3434</br>
+                <i class="fa fa-print"></i> +852 5398 3434</br>
+            </div>
+            <!-- Grid column -->
+        </div>
+
+        <!--start Footer links -->
+        <hr>
+        <!-- Grid row -->
+        <div class="row d-flex align-items-center">
+            <div class="col-md-7 col-lg-8">
+                <!--Copyright-->
+                <p class="text-center text-md-left">© 2021 Copyright: Shining Stars Learning Institute 星仔教育</p>
+            </div>
+            <div class="col-md-5 col-lg-4 ml-lg-0">
+                <!-- Social buttons -->
+                <div class="text-center text-md-right">
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" class="fa fa-facebook"></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="fa fa-instagram"></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="fa fa-youtube"></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end Social buttons -->
+            </div>
+        </div>
+    </div>
+    <!-- end Footer Links -->
+</footer>
+<!-- end Footer -->
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
