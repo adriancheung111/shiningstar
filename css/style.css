@@ -1,23 +1,50 @@
-.nav-link{
+.nav-link {
   cursor: pointer;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   cursor: pointer;
   color: blue !important;
 
 }
 
-#english{
+#english {
   background-image: url('../png/mathbackground.png');
 }
 
 
 @media only screen and (max-width: 768px) {
-  #english{
+  #english {
     background-image: none;
     background-color: rgb(240, 246, 235);
   }
+}
+
+
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+
+
+.slick-prev:before,
+.slick-next:before {
+  color: rgb(175, 175, 175);
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
 }
 
 /* #english{
