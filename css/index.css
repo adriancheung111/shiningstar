@@ -1,55 +1,58 @@
-
 #english {
-    background-image: url('../png/mathbackground.png');
+  background-image: url('../png/mathbackground.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+@media only screen and (max-width: 768px) {
+  #english {
+    background-image: none;
+    background-color: rgb(240, 246, 235);
   }
-  
-  
-  @media only screen and (max-width: 768px) {
-    #english {
-      background-image: none;
-      background-color: rgb(240, 246, 235);
-    }
-  }
-  
-  
-  
-  .slick-slide {
-    margin: 0px 20px;
-  }
-  
-  
-  
-  .slick-prev:before,
-  .slick-next:before {
-    color: rgb(175, 175, 175);
-  }
-  
-  
-  .slick-slide {
-    transition: all ease-in-out .3s;
-    opacity: .2;
-  }
-  
-  .slick-active {
-    opacity: .5;
-  }
-  
-  .slick-current {
-    opacity: 1;
-  }
-  
-  /* #english{
-    display: block;
-      height: 100px;
-      margin-top: -100px;
-      visibility: hidden;
-  }
-  
+}
+
+
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+
+
+.slick-prev:before,
+.slick-next:before {
+  color: rgb(175, 175, 175);
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+
+#testtext {
+
+  border: solid 5px rgb(0, 107, 146, 1);
+
+}
+
+
+/*
   #math{
     display: block;
       height: 100px;
       margin-top: -100px;
       visibility: hidden;
   } */
-  
-  
