@@ -1,7 +1,5 @@
-#canvas {
-    width: 100px;
-    height: 35px;
-    display: inline-block;
-    border: 1px solid #c9c9c9;
-    border-radius: 5px;
+.mediaicon{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
 }
