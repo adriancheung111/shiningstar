@@ -49,6 +49,37 @@
 }
 
 
+#testbtn{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 1em;
+  grid-column-gap: 10px;
+}
+/*  */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
+  grid-row-gap: 1em;
+  grid-column-gap: 10px;
+}
+
+.box2 {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+  
+
+}
 /*
   #math{
     display: block;

@@ -1,3 +1,4 @@
 1.update navbar of every page
 2.update template page
 3.add folder for each js and css
+https://ranking.works/

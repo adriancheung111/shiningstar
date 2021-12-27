@@ -18,6 +18,18 @@
 
 </head>
 
+<script>
+  function display(selected) {
+    if (selected == 'firstbox') {
+      texttoshow = "the text related to first box should be displayed";
+    }
+    else if (selected == 'secondbox') {
+      texttoshow = "Text related to 2nd box.";
+    }
+    document.getElementById("thetext").innerHTML = texttoshow;
+  }
+</script>
+
 <body>
   <!-- start navbar -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-light"
@@ -64,10 +76,8 @@
   <!-- end navbar -->
 
   <!-- start container -->
-  <div class="container">
-    <div id="math" style="padding-top:90px;"></div>
-    <div style="font-size:24px;font-weight: bold;">數學課程介紹</div>
-    <br>
+  <div class="container" style="padding-top:180px;">
+
     <div class="slicklist">
       <a href="./png/poster1.png" rel="shadowbox"><img src="./png/poster1.png" alt="Avatar"
           style="width:100% ; max-height: 400px; margin-top: 50px;"></a>
@@ -86,48 +96,70 @@
   <br>
   <div id="english">
     <div class="container" style="padding-top:90px;padding-bottom: 90px">
-      <span id="englishtext" style="font-size: 24px; font-weight: bold;">英文課程介紹</span>
+      <span id="englishtext"
+        style="font-size: 24px; font-weight: bold; border-bottom: 3px dashed rgb(0 106 146);text-align: center;">英文課程介紹</span>
       <br>
+      <br>
+
+      中學英文HKDSE課程 (常規課程 每堂1小時15分鐘)
+      ‧獨家詳盡筆記、練習、詞匯表和模擬試題
+      ‧詳細改文服務，幫同學改善文筆，提供實用建議
+      <hr>
+      小學英文呈分試課程 (常規課程 每堂1小時15分鐘)
+      ‧獨家詳盡筆記、練習、詞匯表
+      ‧有效糾正同學語法讀音，每月最後一課設有溫習單元
+
     </div>
   </div>
-  <div class="container" style="padding-top:90px;padding-bottom: 90px">
-    <div id="testtext" style="border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;padding:1em;">
-      <h1>test area</h1>
-      <br> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-      sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque
-      eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
-      eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
-      pretium. Integer tincidunt.
-      Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
-      consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
-      viverra nulla ut metus
-      varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
-      nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit
-      amet adipiscing
-      sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
-      tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros
-      faucibus tincidunt.
-      Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum
-      sodales, augue velit cursus nunc,
+
+  <div class="container" style="padding-bottom: 90px">
+    <div id="math" style="padding-top:90px;"></div>
+    <div style="border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;padding:1em;" id="testtext">
+      <br>
+      <div style="font-size:24px;font-weight: bold;text-align: center;">數學課程介紹</div>
+      <br>
+      <br>
+      中學數學HKDSE課程 (常規課程 每堂1小時15分鐘)
+      ‧依照學校進度量身安排，兼備概念和操練，為同學拔尖補底
+      ‧獨特技巧解釋複雜概念，逐步拆解重點課題
+      <hr>
+      小學數學呈分試課程 (常規課程 每堂1小時15分鐘)
+      ‧由淺入深為同學講解升中重點課題
+      ‧完美銜接升中進度
+      <br><br><br>
     </div>
-    <br> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-    sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-    pellentesque
-    eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
-    eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
-    pretium. Integer tincidunt.
-    Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
-    consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
-    viverra nulla ut metus
-    varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
-    nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit
-    amet adipiscing
-    sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
-    tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros
-    faucibus tincidunt.
-    Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum
-    sodales, augue velit cursus nunc,
+  </div>
+
+  <div class="container" style="padding-top:90px;padding-bottom: 90px">
+    <div style="font-size:24px;font-weight: bold;text-align: center;">各類課程</div>
+    <div class="row">
+      <div class="col-md-6" id="testbtn">
+        <div class="container">
+        <div class="row">
+          <div class="col-12" style="font-size: 28px;">topic</h1>
+          </div>
+          <button class="btn btn-primary col-md-6 active" id="btn1" onclick="display('firstbox')">class 1</button>
+          <button class="btn btn-primary col-md-6" id="btn2 " onclick="display('secondbox')">class 2</button>
+          <button class="btn btn-primary  col-md-6" id="btn3">class 3</button>
+        </div>
+      </div>
+      </div>
+      <div class="col-md-6">
+        <div class="" id="thetext">testares</div>
+      </div>
+    </div>
+<!--  -->
+    <div class="wrapper">
+      <div class="box2" style="border: solid;">Two</div>
+      <div class="box3" style="border: solid;">Three</div>
+      <div class="box4" style="border: solid;">Four</div>
+      <div class="box5" style="border: solid;">Five</div>
+    </div>
+
+    <br> 升中3+1面試特訓班 (精華短期課程 每堂1小時15分鐘)
+    ‧涵蓋面試中英文自我介紹、文章朗讀、小組討論和英文對答訓練
+    ‧一堂模擬面試，因應同學情況提供進一步度身訂造支援
+
     <hr>
 
     <br> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
@@ -148,8 +180,25 @@
     Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum
     sodales, augue velit cursus nunc,
     <hr>
-
-    <!--Remaining section-->
+    <br> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+    sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+    pellentesque
+    eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
+    eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
+    pretium. Integer tincidunt.
+    Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
+    consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
+    viverra nulla ut metus
+    varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
+    nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit
+    amet adipiscing
+    sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
+    tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros
+    faucibus tincidunt.
+    Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum
+    sodales, augue velit cursus nunc,
+  </div>
+  <!--Remaining section-->
 
   </div>
   <!-- end container -->
@@ -170,9 +219,6 @@
   <script src="./js/shadowbox.js"></script>
   <script src="./js/index.js"></script>
 
-  <script>
-
-  </script>
 </body>
 
 </html>
