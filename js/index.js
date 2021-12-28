@@ -1,31 +1,19 @@
 $(document).ready(function () {
     $('.slicklist').slick({
-      centerMode: true,
-      centerPadding: '60px',
-      slidesToShow: 3,
+      dots: true,
+      arrows: true,
       autoplay: true,
-      autoplaySpeed: 2000,
+      adaptiveHeight: true,
+      autoplaySpeed: 5000,
       responsive: [
         {
           breakpoint: 768,
           settings: {
             arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 3,
-
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
             slidesToShow: 1,
 
           }
-        }
+        },
       ]
     });
   });
