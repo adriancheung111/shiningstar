@@ -116,6 +116,22 @@
   grid-row-start: 1;
   grid-row-end: 3;
 } */
+.courseSpec{
+  padding: 20px;
+  background-position: 50%;
+  border: 1px solid #e4e4e4;
+  border-radius: 10px;
+  transition: all .5s ease-out;
+  transition-property: all;
+  text-align: center;
+}
+
+.courseSpec:hover{
+  box-shadow: 0 1px 10px 1px rgb(0, 107, 146, 1);
+  transform: translate3d(0,-8px,0);
+
+}
+
 
 .btn1 {
   padding: 20px;
