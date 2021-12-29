@@ -15,7 +15,13 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/shadowbox.css">
   <link rel="stylesheet" href="./css/index.css">
-
+  <style>
+    .fa {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+  </style>
 </head>
 
 <script>
@@ -166,25 +172,47 @@
 
   <div class="container" style="padding-top:90px;padding-bottom: 90px">
     <div style="font-size:24px;font-weight: bold;text-align: center;">各類課程</div>
+    <br>
     <div class="row">
       <div class="col-md-6" id="testbtn">
-        <div class="container">
         <div class="row">
-          <div class="col-12" style="font-size: 28px;">topic</h1>
+          <div class="col-6" id="" onclick="display('firstbox')">
+            <div id="btn1">
+              <i class="fa fa-home"></i>
+              <i class="fa fa-pen"></i>
+              <i class="fa fa-band-aid"></i>
+              <i class="fa fa-cat"></i>
+              <i class="fas fa-band-aid"></i>
+              <i class="fas fa-cat"></i>
+              <i class="fas fa-dragon"></i>
+              <i class="fa-search"></i>    
+
+              <!-- Correct -->
+              <i class="fa fa-dragon"></i>
+            </div>
           </div>
-          <button class="btn btn-primary col-md-6 active" id="btn1" onclick="display('firstbox')">class 1</button>
-          <button class="btn btn-primary col-md-6" id="btn2 " onclick="display('secondbox')">class 2</button>
-          <button class="btn btn-primary  col-md-6" id="btn3">class 3</button>
+          <div class="col-6" onclick="display('secondbox')">
+            <div id="btn1"> 1</div>
+          </div>
+          <div class="col-12" style="margin-top: 10px;">sadas</div>
+          <div class="col-6" onclick="display('secondbox')">
+            <div id="btn1"> 1</div>
+          </div>
         </div>
       </div>
-      </div>
       <div class="col-md-6">
-        <div class="" id="thetext">testares</div>
+        <div class="" id="thetext">
+          升中3+1面試特訓班 (精華短期課程 每堂1小時15分鐘)
+          ‧涵蓋面試中英文自我介紹、文章朗讀、小組討論和英文對答訓練
+          ‧一堂模擬面試，因應同學情況提供進一步度身訂造支援
+        </div>
       </div>
     </div>
-<!--  -->
+    <br>
+    <br>
+    <!--  -->
     <div class="wrapper">
-      <div class="box2" style="border: solid;">Two</div>
+      <div class="box2" style="border: solid;"></div>
       <div class="box3" style="border: solid;">Three</div>
       <div class="box4" style="border: solid;">Four</div>
       <div class="box5" style="border: solid;">Five</div>
@@ -193,9 +221,9 @@
     <br> 升中3+1面試特訓班 (精華短期課程 每堂1小時15分鐘)
     ‧涵蓋面試中英文自我介紹、文章朗讀、小組討論和英文對答訓練
     ‧一堂模擬面試，因應同學情況提供進一步度身訂造支援
-
-    <hr>
-
+  </div>
+  <hr>
+  <div class="container" style="padding-top:90px;padding-bottom: 90px">
     <br> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
     sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
     pellentesque

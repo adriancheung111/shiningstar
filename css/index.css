@@ -82,6 +82,22 @@
   grid-row-end: 3;
 }
 
+#btn1 {
+  padding: 20px;
+  min-height: 200px;
+  background-position: 50%;
+  border: 1px solid #e4e4e4;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#thetext {
+  border-radius: 20px;
+  box-shadow: 0 2px 7px 0 rgb(0 0 0 / 23%);
+  background-color: #fff;
+  padding: 60px 50px;
+}
 
 @media only screen and (max-width: 768px) {
   .wrapper {
