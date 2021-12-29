@@ -1,28 +1,27 @@
 
 .slider-image1 {
-  background-image:url("../png/testimg.png");
-  height: 90vh;
-  background-position: bottom; 
-  background-size: cover;
-  
+  background-image:url("../png/index_banner3.jpg");
+  height: 91vh;
+  background-position: center; 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
 }
 
 
 .slider-image2 {
   background-image:url("../png/index_banner.png");
-  height: 90vh;
-  background-position: bottom; 
+  height: 91vh;
+  background-position: center; 
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
 }
 .slider-image3 {
-  background-image:url("../png/index_banner2.png");
-  height: 90vh;
-  background-position: center;
+  background-image:url("../png/Back.png");
+  height: 91vh;
+  background-position: center; 
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
 }
 
 
@@ -74,7 +73,7 @@
  }
 
  .slick-dots li.slick-active button:before{
-   color: #fff;
+   color: black;
  }
 
 .slider1 {
@@ -140,14 +139,14 @@ color: white;
 }
 
 @media only screen and (max-width: 768px) {
-  .wrapper {
+  /* .wrapper {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
 
   .slider1 {
     width: 90% !important;
-  }
+  } */
 
   #btn1 {
     min-height: auto;
@@ -157,8 +156,13 @@ color: white;
     margin-top: 20px;
   }
 
+  .slider-image3 {
+    background-image:url("../png/Back_mobile.png");
+
+  }
   .slider-image1 {
-width: 100%;
+    background-image:url("../png/index_banner3_mobile.jpg");
+
   }
 }
 
