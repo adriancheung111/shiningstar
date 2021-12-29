@@ -1,3 +1,31 @@
+
+.slider-image1 {
+  background-image:url("../png/testimg.png");
+  height: 100vh;
+  background-position: bottom; 
+  background-size: cover;
+  
+}
+
+
+.slider-image2 {
+  background-image:url("../png/index_banner.png");
+  height: 100vh;
+  background-position: bottom; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.slider-image3 {
+  background-image:url("../png/index_banner2.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
 #english {
   background-image: url('../png/mathbackground.png');
   background-repeat: no-repeat;
@@ -24,12 +52,13 @@
   font-size: 35px;
   line-height: 1;
   content: "\f105";
-  color: #349691;
+  color: #ffff;
 
 }
 
 .slick-prev {
   left: 20px;
+  z-index: 2;
 }
 
 .slick-prev:before {
@@ -37,9 +66,16 @@
   font-size: 35px;
   line-height: 1;
   content: "\f104";
-  color: #349691;
+  color: #ffff;
 
 }
+.slick-dots{
+  bottom: 20px;
+ }
+
+ .slick-dots li.slick-active button:before{
+   color: #fff;
+ }
 
 .slider1 {
   display: flex !important;
@@ -119,6 +155,10 @@ color: white;
   }
   #thetext{
     margin-top: 20px;
+  }
+
+  .slider-image1 {
+width: 100%;
   }
 }
 
