@@ -117,7 +117,9 @@ color: white;
     min-height: auto;
 
   }
-  
+  #thetext{
+    margin-top: 20px;
+  }
 }
 
 
