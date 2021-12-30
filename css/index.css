@@ -1,8 +1,7 @@
-
 .slider-image1 {
-  background-image:url("../png/index_banner3.jpg");
-  height: 91vh;
-  background-position: center; 
+  background-image: url("../png/index_banner3.jpg");
+  height: 60vh;
+  background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
@@ -10,16 +9,17 @@
 
 
 .slider-image2 {
-  background-image:url("../png/index_banner.png");
-  height: 91vh;
-  background-position: center; 
+  background-image: url("../png/index_banner.png");
+  height: 60vh;
+  background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+
 .slider-image3 {
-  background-image:url("../png/Back.png");
-  height: 91vh;
-  background-position: center; 
+  background-image: url("../png/Back.png");
+  height: 60vh;
+  background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -60,13 +60,14 @@
   color: #ffff;
 
 }
-.slick-dots{
-  bottom: 20px;
- }
 
- .slick-dots li.slick-active button:before{
-   color: black;
- }
+.slick-dots {
+  bottom: 20px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: black;
+}
 
 .slider1 {
   display: flex !important;
@@ -108,48 +109,33 @@
   grid-row-start: 1;
   grid-row-end: 3;
 } */
-.courseSpec{
+.courseSpec {
   padding: 20px;
   background-position: 50%;
   background-color: white;
-  box-shadow: 0 1px 10px 1px rgb(190, 190, 190);
+  box-shadow: 0 1px 10px 0px rgb(221, 221, 221);
   border-radius: 10px;
   transition: all .5s ease-out;
   transition-property: all;
   text-align: center;
 }
 
-.courseSpec:hover{
-  box-shadow: 0 1px 10px 1px rgb(255, 192, 32, 1);
-  transform: translate3d(0,-8px,0);
+.courseSpec:hover {
+  box-shadow: 0 1px 10px 1px #FFCC99;
+  transform: translate3d(0, -8px, 0);
 
 }
 
-
-.btn1 {
+#all-course-area{
   padding: 20px;
   background-position: 50%;
   background-color: white;
   border: 1px solid #e4e4e4;
   border-radius: 10px;
-  cursor: pointer;
-  text-align: center;
-} 
-
-.btn1.active, .btn1:hover {
-background-color: rgb(255, 192, 32, 1);
-color: white;
-}
-
-#thetext {
-  border-radius: 20px;
-  box-shadow: 0 2px 7px 0 rgb(0 0 0 / 23%);
-  background-color: #fff;
-  padding: 60px 50px;
 }
 
 @media only screen and (max-width: 768px) {
-    /* #english {
+  /* #english {
     background-image: none;
     background-color: rgb(240, 246, 235);
   } */
@@ -163,20 +149,13 @@ color: white;
     width: 90% !important;
   } */
 
-  #btn1 {
-    min-height: auto;
-
-  }
-  #thetext{
-    margin-top: 20px;
-  }
-
   .slider-image3 {
-    background-image:url("../png/Back_mobile.png");
+    background-image: url("../png/Back_mobile.png");
 
   }
+
   .slider-image1 {
-    background-image:url("../png/index_banner3_mobile.jpg");
+    background-image: url("../png/index_banner3_mobile.jpg");
 
   }
 }

@@ -2,9 +2,8 @@
   cursor: pointer;
 }
 
-.nav-link:hover {
+.dropdown-item:hover, .nav-link:hover {
   cursor: pointer;
-  color: blue !important;
-
+  color: #333333 !important;
 }
 

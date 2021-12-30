@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Shining Stars Learning Institute 星仔教育</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+  <script src="https://kit.fontawesome.com/4516845b90.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="./slick/slick.css" />
+  <link rel="stylesheet" href="./slick/slick-theme.css" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/shadowbox.css">
+  <link rel="stylesheet" href="./css/allcourse.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <!-- start navbar -->
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light"
+    style="background-color:white; box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.19);z-index: 10;">
+    <div class="container">
+      <a class="navbar-brand" href="./index">
+        <img src="./png/logo.png" width="145px" height="50px" style="margin-bottom: 7px" alt="">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown" style="justify-content: flex-end;">
+        <ul class="navbar-nav">
+          <li class="nav-item active" style="font-weight: bold;">
+            <a class="nav-link" href="./index" data-translate="index">首頁<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false" data-translate="course">
+              中小學課程
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color:#FAFAF2">
+              <a class="dropdown-item" href="./index#math" id="navMath" data-translate="math">數學課程介紹</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="./index#english" id="navEng" data-translate="eng">英文課程介紹</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./teacher" data-translate="teacher">導師簡介</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./freeapply" data-translate="free">免費試堂/報名</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contactus" data-translate="contact">聯絡我們</a>
+          </li>
+          <!-- <li class="nav-item">
+          <a class="nav-link" onclick="change_lang()">中/英</a>
+        </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- end navbar -->
+
+<div id="differentCourse" style="background:rgb(255, 245, 216);">
+    <div class="container" style="padding-top:90px;padding-bottom: 90px">
+      <div style="font-size:24px;font-weight: bold;text-align: center;margin-bottom: 20px;color: rgb(189, 150, 33);">
+        各類課程</div>
+      <br>
+      <div class="row">
+        <div class="col-md-6 col-12" id="testbtn">
+          <div class="row">
+            <div class="col-6" onclick="display('firstbox')">
+              <div class="btn1">
+                <i class="fa fa-chalkboard-teacher" style="font-size: 48px;"></i>
+                <br>
+                中學數學HKDSE課程
+              </div>
+            </div>
+            <div class="col-6" onclick="display('secondbox')">
+              <div class="btn1">
+                <i class="fa fa-chalkboard-teacher" style="font-size: 48px;"></i>
+                <br>
+                ZZ課程
+              </div>
+            </div>
+            <div class="col-12" style="padding-left: 20px; margin-bottom: 10px;  margin-top: 10px;">其他</div>
+            <div class="col-6" onclick="display('thirdbox')">
+              <div class="btn1">
+                <i class="fa fa-chalkboard-teacher" style="font-size: 48px;"></i>
+                <br>
+                YY課程
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-12">
+          <div class="" id="thetext">
+            請先選擇課程...
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+    </div>
+    <!--  -->
+    <!-- <div class="wrapper">
+      <div class="box2" style="border: solid;"></div>
+      <div class="box3" style="border: solid;">Three</div>
+      <div class="box4" style="border: solid;">Four</div>
+      <div class="box5" style="border: solid;">Five</div>
+    </div> -->
+  </div>
+
+  <div id="footer"></div>
+
+
+  <!-- js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/shadowbox.js"></script>
+  <script src="./js/allcourse.js"></script>
+
+</body>
+
+</html>
