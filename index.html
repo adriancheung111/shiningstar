@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/shadowbox.css">
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/animate.css">
+
   <style>
 
   </style>
@@ -142,7 +144,7 @@
   <div id="courseSpecHeader" style="background:rgb(255, 245, 216);">
     <div class="container" style="padding-bottom: 90px">
       <div id="math" style="padding-top:90px;"></div>
-      <div class="row">
+      <div class="row wow fadeIn animated" data-wow-delay="0.25s">
         <div class="col-12">
           <div style="font-size: 28px;font-weight: bold;text-align: center;margin-bottom: 20px;color: #DD5F36">
             課程特點</div>
@@ -200,36 +202,59 @@
               </div>
             </div>
           </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="" style="background:rgb(255, 245, 216);">
-    <div class="container" style="padding-bottom: 90px">
-      <div id="math" style="padding-top:90px;"></div>
-      <div class="row">
-        <div class="col-12"
-          style="font-size: 28px; font-weight: bold;color: #DD5F36;display:flex; justify-content: center;margin-bottom: 20px;">
-          不同課程推薦</div>
-        <div class="col-12" style="display:flex; justify-content: center;margin-bottom: 20px;color: #737a8e;">
-          各種課程提供選擇
-        </div>
-        <div class="col-12" style="display:flex; justify-content: center;">
-          <button class="btn btn-primary"
-            style="border-radius: 30px;width: 100px;background-color:#DD5F36 ;border: 0px;padding: 10px;"><a
-              href="./allcourse" style="color:white">立即報名</a></button>
         </div>
       </div>
     </div>
-  </div>
-  </div>
 
-  <div class="container" style="padding-top:90px;padding-bottom: 90px">
-    <br>
-    <div style=" display:flex; justify-content: center;">
-      <br>
-      <br>
-      <p>
+    <div id="" style="background:#FFEC90;">
+      <div class="container" style="padding-bottom: 90px">
+        <div id="math" style="padding-top:90px;"></div>
+        <div class="row">
+          <div class="col-12"
+            style="font-size: 28px; font-weight: bold;color: #000000;display:flex; justify-content: center;margin-bottom: 20px;">
+            不同課程推薦</div>
+          <div class="col-12" style="display:flex; justify-content: center;margin-bottom: 20px;color: #737a8e;">
+            各種課程提供選擇
+          </div>
+          <div class="col-12" style="display:flex; justify-content: center;">
+            <button class="btn btn-primary"
+              style="border-radius: 30px;width: 100px;background-color:#DD5F36 ;border: 0px;padding: 10px;"><a
+                href="./allcourse" style="color:white">立即報名</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ============================================================================== -->
+  <div id="fh5co-download" class="fh5co-bottom-outer">
+    <div class="overlay">
+      <div class="container fh5co-bottom-inner">
+        <div class="row">
+          <div class="col-sm-6">
+            <h1>如何體驗免費和優惠課程</h1>
+            <p>
+              中小學數學英文課程
+              <br>
+              提供免費試堂
+              <br>
+              用心教學 質素保證
+              <br>
+              歡迎聯絡了解
+              <br>
+
+              <i class="fa fa-home"></i> 元朗壽富街元朗中心 6 樓 07 室</br>
+            </p>
+            <button class="btn" href="https://api.whatsapp.com/send?phone=85264690350"
+              style="background: rgb(81, 205, 94);color: white;display: flex;"><i class="fa fa-whatsapp"></i>
+              電話/WhatsApp:
+              +852 6469 0350</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <p>
         <span style="font-size:28px;font-weight: bold;">如何體驗免費和優惠課程</span>
         <br>
         <br>
@@ -246,14 +271,16 @@
           電話/WhatsApp:
           +852 6469 0350</button>
         <i class="fa fa-home"></i> 元朗壽富街元朗中心 6 樓 07 室</br>
-      </p>
-    </div>
-    <br><br><br>
-  </div>
+      </p> -->
+  <!-- ============================================================================== -->
+
+
+
+
   <!--Remaining section-->
 
-  </div>
   <!-- end container -->
+
   <div id="footer"></div>
 
 
@@ -269,6 +296,7 @@
   <script src="./js/script.js"></script>
   <script src="./slick/slick.js"></script>
   <script src="./js/shadowbox.js"></script>
+  <script src="./js/wow.min.js"></script>
   <script src="./js/index.js"></script>
 
 </body>

@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  new WOW().init();
+
   $('.slicklist').slick({
     dots: true,
     arrows: true,
