@@ -3,8 +3,5 @@
 3.add folder for each js and css
 https://ranking.works/
 
-#DD5F36
-#DED7C4
-#FAFAF2
-#EBC70F
-#000000
+small text#67635A
+backcolor#FFEC90
