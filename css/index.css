@@ -134,7 +134,7 @@
   border-radius: 10px;
 }
 
-/*  */
+/* ====================================== bottom join =========================================*/
 .fh5co-bottom-outer {
   width: 100%;
   height: 572px;
@@ -170,9 +170,12 @@
   color: white;
   display: flex;
 }
+/* ====================================== bottom join =========================================*/
 
-/*  */
 @media only screen and (max-width: 768px) {
+
+  /* ====================================== bottom join @media768=========================================*/
+
   .overlay {
     width: 100%;
     height: 100%;
@@ -200,9 +203,11 @@
     margin: 0 auto;
     color: white;
   }
+
   .fh5co-bottom-outer .fh5co-bottom-inner .col-sm-6 h1 {
     color: white;
   }
+
   .fh5co-bottom-inner {
     overflow: hidden;
     padding-bottom: 50px;
@@ -215,7 +220,7 @@
     display: inline;
 
   }
-
+/* ====================================== bottom join =========================================*/
   .slider-image3 {
     background-image: url("../png/Back_mobile.png");
 
