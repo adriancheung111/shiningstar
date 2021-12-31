@@ -144,7 +144,7 @@
 }
 
 .fh5co-bottom-outer .fh5co-bottom-inner {
-  margin-top: 270px;
+  margin-top: 230px;
 }
 
 .fh5co-bottom-outer .fh5co-bottom-inner .col-sm-6 h1 {
@@ -217,7 +217,7 @@
 
   #wtsbtn {
     left: 50%;
-    display: inline;
+    display: inline-flex;
 
   }
 /* ====================================== bottom join =========================================*/
