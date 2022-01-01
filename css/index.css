@@ -1,5 +1,5 @@
 .slider-image1 {
-  background-image: url("../png/index_banner3.jpg");
+  background-image: url("../png/new_banner.png");
   height: 60vh;
   background-position: center;
   background-size: 100% 100%;
@@ -9,7 +9,7 @@
 
 
 .slider-image2 {
-  background-image: url("../png/index_banner.png");
+  background-image: url("../png/index_banner3.jpg");
   height: 60vh;
   background-position: center;
   background-size: 100% 100%;
@@ -80,6 +80,10 @@
 
 
 /* slick */
+#aboutUsHeader{
+  padding-top:90px;
+}
+
 
 #testtext {
 
@@ -121,7 +125,7 @@
 }
 
 .courseSpec:hover {
-  box-shadow: 0 1px 10px 1px #FFCC99;
+  box-shadow: 0 1px 10px 1px #ff8b17;
   transform: translate3d(0, -8px, 0);
 
 }
@@ -133,6 +137,7 @@
   border: 1px solid #e4e4e4;
   border-radius: 10px;
 }
+
 /* ====================================== reviews =========================================*/
 
 .fh5co-reviews-outer {
@@ -141,10 +146,12 @@
   padding: 70px;
   margin-top: 100px;
 }
+
 .fh5co-reviews-outer .fh5co-reviews-inner {
   margin-top: 100px;
 }
-.fh5co-reviews-outer > h1 {
+
+.fh5co-reviews-outer>h1 {
   color: #996B0F;
   text-transform: uppercase;
   font-size: 30px;
@@ -152,15 +159,18 @@
   margin-bottom: 10px;
   text-align: center;
 }
-.fh5co-reviews-outer > small {
+
+.fh5co-reviews-outer>small {
   text-align: center;
   display: block;
 }
+
 .fh5co-reviews-outer .testimonial-desc {
   clear: both;
   padding-top: 30px;
   font-weight: 500;
 }
+
 .fh5co-reviews-outer .testimonial-2 {
   margin-left: 50px;
 }
@@ -203,7 +213,9 @@
 }
 
 @media only screen and (max-width: 768px) {
-
+  #aboutUsHeader{
+    padding-top:0px;
+  }
   /* ====================================== bottom join @media768=========================================*/
 
   .overlay {
@@ -250,39 +262,50 @@
     display: inline-flex;
 
   }
-/* ====================================== reviews =========================================*/
 
-.fh5co-reviews-outer {
-  padding: 0;
-}
-.fh5co-reviews-outer {
-  height: auto;
-}
+  /* ====================================== reviews =========================================*/
 
-.fh5co-reviews-outer .fh5co-reviews-inner {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-.fh5co-reviews-inner .col-sm-5 {
-  -ms-flex: 0 0 90%;
-  flex: 0 0 90%;
-  width: 90%;
-  max-width: 90%;
-  margin: 30px auto;
-  text-align: center;
-}
+  .fh5co-reviews-outer {
+    padding: 0;
+  }
+
+  .fh5co-reviews-outer {
+    height: auto;
+  }
+
+  .fh5co-reviews-outer .fh5co-reviews-inner {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .fh5co-reviews-inner .col-sm-5 {
+    -ms-flex: 0 0 90%;
+    flex: 0 0 90%;
+    width: 90%;
+    max-width: 90%;
+    margin: 30px auto;
+    text-align: center;
+  }
+
+
+  .slider-image1 {
+    height: 50vh;
+    background-image: url("../png/new_banner_mob.png");
+
+  }
+
+  .slider-image2 {
+    background-image: url("../png/index_banner3_mobile.jpg");
+    height: 50vh;
+  }
 
   .slider-image3 {
     background-image: url("../png/Back_mobile.png");
+    height: 50vh;
 
   }
 
-  .slider-image1 {
-    background-image: url("../png/index_banner3_mobile.jpg");
-
-  }
 }
-
 
 /*
   #math{
