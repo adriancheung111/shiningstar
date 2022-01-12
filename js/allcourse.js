@@ -1,4 +1,16 @@
-function display(selected) {
+  var header = document.getElementById("testbtn");
+  var btns = header.getElementsByClassName("btn1");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+      var current = document.getElementsByClassName("active");
+      if (current.length > 0) {
+        current[0].className = current[0].className.replace(" active", "");
+      }
+      this.className += " active";
+    });
+  }
+
+  function display(selected) {
     if (selected == 'math1') {
       texttoshow = `<h1>中學數學HKDSE課程</h1>
       (常規課程 每堂1小時15分鐘)<br><br>
@@ -43,17 +55,4 @@ function display(selected) {
       </ul>`;
     }
     document.getElementById("thetext").innerHTML = texttoshow;
-  }
-  
-  
-  var header = document.getElementById("testbtn");
-  var btns = header.getElementsByClassName("btn1");
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function () {
-      var current = document.getElementsByClassName("active");
-      if (current.length > 0) {
-        current[0].className = current[0].className.replace(" active", "");
-      }
-      this.className += " active";
-    });
   }
