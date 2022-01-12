@@ -152,10 +152,10 @@
 }
 
 .reviews-outer>h1 {
-  color: #996B0F;
+  color: #000000;
   text-transform: uppercase;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: bold;
   margin-bottom: 10px;
   text-align: center;
 }
