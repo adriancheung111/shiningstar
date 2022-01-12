@@ -1,34 +1,39 @@
 #thetext {
-    border-radius: 20px;
-    box-shadow: 0 2px 7px 0 rgb(0 0 0 / 23%);
-    background-color: #fff;
-    padding: 60px 50px;
-  }
+  border-radius: 20px;
+  box-shadow: 0 2px 7px 0 rgb(0 0 0 / 23%);
+  background-color: #fff;
+  padding: 60px 50px;
+}
 
-  .btn1 {
-    padding: 20px;
-    background-position: 50%;
-    background-color: white;
-    border: 1px solid #e4e4e4;
-    border-radius: 10px;
-    cursor: pointer;
-    text-align: center;
-  } 
+.btn1 {
+  padding: 20px;
+  background-position: 50%;
+  background-color: white;
+  border: 1px solid #e4e4e4;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+}
 
-  
 .btn1.active, .btn1:hover {
-    background-color: rgb(255, 192, 32, 1);
-    color: white;
-    }
-    
+  background-color: rgb(255, 192, 32, 1);
+  color: white;
+}
 
-  @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
   #btn1 {
     min-height: auto;
 
   }
-  #thetext{
+
+  #thetext {
     margin-top: 20px;
   }
+}
+
+#thetextheader {
+  display: block;
+  visibility: hidden;
+  
 }
