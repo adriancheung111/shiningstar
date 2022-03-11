@@ -17,7 +17,7 @@
 }
 
 .slider-image3 {
-  background-image: url("../png/Back.png");
+  background-image: url("../png/banner3.png");
   height: 60vh;
   background-position: center;
   background-size: 100% 100%;
@@ -306,7 +306,7 @@
   }
 
   .slider-image3 {
-    background-image: url("../png/Back_mobile.png");
+    background-image: url("../png/banner3_mob.png");
     height: 50vh;
 
   }
