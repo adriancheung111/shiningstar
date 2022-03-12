@@ -1,8 +1,7 @@
 var header = document.getElementById("testbtn");
 var btns = header.getElementsByClassName("btn1");
 var element = document.getElementById("thetext");
-
-
+// test
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function () {
     element.scrollIntoView();
