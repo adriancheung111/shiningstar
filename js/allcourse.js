@@ -66,11 +66,11 @@ function display(selected) {
       </ul>
       <hr>
       <b>費用:<br>
-      小三至小六 $750/4堂<br>
+      小三至小六 $1600/8堂<br>
       (雙科優惠 每期即減$100、二人優惠 首期即減$100)</b>`;
   }
   else if (selected == 'english3') {
-    texttoshow = `<h1>小學英文呈分試課程</h1><br>
+    texttoshow = `<h1>小學英文進階課程</h1><br>
       <u>因疫情影響，暑假期間會改為Zoom網課</u><br>
       (常規課程 每堂1小時15分鐘)<br><br>
       <ul>
@@ -79,7 +79,7 @@ function display(selected) {
       </ul>
       <hr>
       <b>費用:<br>
-      小三至小六 $1600/8堂<br>
+      小三至小六 $750/4堂<br>
       (雙科優惠 每期即減$100、二人優惠 首期即減$100)</b>`;
   }
   else if (selected == 'other1') {
