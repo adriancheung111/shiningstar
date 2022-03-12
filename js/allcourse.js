@@ -17,7 +17,7 @@ function display(selected) {
   if (selected == 'math1') {
     texttoshow = `<h1>中學數學HKDSE課程</h1><br>
       <u>因疫情影響，暑假期間會改為Zoom網課</u><br>
-      (常規課程 每堂1小時15分鐘)<br><br>
+      (常規課程 每堂1小時155分鐘)<br><br>
       <ul>
       <li>依照學校進度量身安排，兼備概念和操練，為同學拔尖補底</li>
       <li>非死記硬背。以興趣為始，以學識為旨，為初中同學建立對數學科的興趣和信心，進而在考試考取好成績</li>
