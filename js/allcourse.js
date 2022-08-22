@@ -15,7 +15,6 @@ for (var i = 0; i < btns.length; i++) {
 function display(selected) {
   if (selected == 'math1') {
     texttoshow = `<h1>中學數學HKDSE課程</h1><br>
-      <u>因疫情影響，暑假期間會改為Zoom網課</u><br>
       (常規課程 每堂1小時15分鐘)<br><br>
       <ul>
       <li>依照學校進度量身安排，兼備概念和操練，為同學拔尖補底</li>
@@ -31,7 +30,6 @@ function display(selected) {
   }
   else if (selected == 'math2') {
     texttoshow = `<h1>小學數學呈分試課程</h1><br>
-      <u>因疫情影響，暑假期間會改為Zoom網課</u><br>
       (常規課程 每堂1小時15分鐘)<br><br>
       <ul>
       <li>由淺入深為同學講解升中重點課題，以呈分試為教學方向，與同學操練每課呈分試重點題目，入讀心宜band1中學。</li>
@@ -45,7 +43,6 @@ function display(selected) {
   }
   else if (selected == 'english1') {
     texttoshow = `<h1>中學英文HKDSE課程</h1><br>
-      <u>因疫情影響，暑假期間會改為Zoom網課</u><br>
       (常規課程 每堂1小時15分鐘)<br><br>
       <ul>
       <li>涵蓋「讀寫聽說」四個範疇，幫助同學打好文法基礎。實用獨家詳盡的筆記、練習、模擬試題、詞匯表等等，讓初中學生循序漸進地提昇英文水平，儘早為公開試作準備。</li>
@@ -60,7 +57,6 @@ function display(selected) {
   }
   else if (selected == 'english2') {
     texttoshow = `<h1>一對一小學英文基礎課程</h1><br>
-      <u>因疫情影響，暑假期間會改為Zoom網課</u><br>
       (常規課程 每堂1小時15分鐘)<br><br>
       <ul>
       <li>獨家詳盡筆記、練習、詞匯表。</li>
@@ -73,7 +69,6 @@ function display(selected) {
   }
   else if (selected == 'english3') {
     texttoshow = `<h1>小學英文進階課程</h1><br>
-      <u>因疫情影響，暑假期間會改為Zoom網課</u><br>
       (常規課程 每堂1小時15分鐘)<br><br>
       <ul>
       <li>獨家詳盡筆記、練習、詞匯表。</li>
@@ -86,7 +81,6 @@ function display(selected) {
   }
   else if (selected == 'other1') {
     texttoshow = `<h1>升中3+1面試特訓班</h1><br>
-      <u>因疫情影響，暑假期間會改為Zoom網課</u><br>
       (精華短期課程 每堂1小時15分鐘)<br><br>
       <ul>
       <li>課程内容：教導學生如何用中文和英文進行面試，内容包括自我介紹、朗讀、問答和小組討論。</li>
