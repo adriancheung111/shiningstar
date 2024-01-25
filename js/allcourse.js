@@ -25,7 +25,7 @@ function display(selected) {
       <hr>
       <b>費用:<br>
       中一至中三 $900/4堂<br>
-      中四至中六 $900/4堂<br>
+      中四至中六 $950/4堂<br>
       (報讀雙科優惠 下期回贈$200、自組小班優惠 最高可享首月半價)</b>`;
   }
   else if (selected == 'math2') {
