@@ -24,7 +24,7 @@ function display(selected) {
       </ul>
       <hr>
       <b>費用:<br>
-      中一至中三 $850/4堂<br>
+      中一至中三 $900/4堂<br>
       中四至中六 $900/4堂<br>
       (報讀雙科優惠 下期回贈$200、自組小班優惠 最高可享首月半價)</b>`;
   }
@@ -37,7 +37,7 @@ function display(selected) {
       </ul>
       <hr>
       <b>費用:<br>
-      小三至小六 $800/4堂<br>
+      小三至小六 $850/4堂<br>
       (報讀雙科優惠 下期回贈$200、自組小班優惠 最高可享首月半價)</b>`;
   }
   else if (selected == 'english1') {
@@ -50,7 +50,7 @@ function display(selected) {
       </ul>
       <hr>
       <b>費用:<br>
-      中一至中三 $850/4堂<br>
+      中一至中三 $900/4堂<br>
       中四至中六 $950/4堂<br>
       (報讀雙科優惠 下期回贈$200、自組小班優惠 最高可享首月半價)</b>`;
   }
@@ -75,7 +75,7 @@ function display(selected) {
       </ul>
       <hr>
       <b>費用:<br>
-      小三至小六 $800/4堂<br>
+      小三至小六 $850/4堂<br>
       (報讀雙科優惠 下期回贈$200、自組小班優惠 最高可享首月半價)</b>`;
   }
   else if (selected == 'other1') {
