@@ -24,8 +24,8 @@ function display(selected) {
       </ul>
       <hr>
       <b>費用:<br>
-      中一至中三 $900/4堂<br>
-      中四至中六 $950/4堂<br>
+      中一至中三 $950/4堂<br>
+      中四至中六 $1000/4堂<br>
       (報讀雙科優惠 下期回贈$200、自組小班優惠 最高可享首月半價)</b>`;
   }
   else if (selected == 'math2') {
@@ -37,7 +37,7 @@ function display(selected) {
       </ul>
       <hr>
       <b>費用:<br>
-      小三至小六 $850/4堂<br>
+      小三至小六 $900/4堂<br>
       (報讀雙科優惠 下期回贈$200、自組小班優惠 最高可享首月半價)</b>`;
   }
   else if (selected == 'english1') {
@@ -50,8 +50,8 @@ function display(selected) {
       </ul>
       <hr>
       <b>費用:<br>
-      中一至中三 $900/4堂<br>
-      中四至中六 $950/4堂<br>
+      中一至中三 $950/4堂<br>
+      中四至中六 $1000/4堂<br>
       (報讀雙科優惠 下期回贈$200、自組小班優惠 最高可享首月半價)</b>`;
   }
   else if (selected == 'english2') {
@@ -75,7 +75,7 @@ function display(selected) {
       </ul>
       <hr>
       <b>費用:<br>
-      小三至小六 $850/4堂<br>
+      小三至小六 $900/4堂<br>
       (報讀雙科優惠 下期回贈$200、自組小班優惠 最高可享首月半價)</b>`;
   }
   else if (selected == 'other1') {
@@ -87,7 +87,7 @@ function display(selected) {
       </ul>
       <hr>
       <b>費用:<br>
-      $900 (3堂+1堂模擬面試)<br>
+      $950 (3堂+1堂模擬面試)<br>
       (雙科優惠 每期即減$100、二人優惠 首期即減$100)</b>`;
   }
   document.getElementById("thetext").innerHTML = texttoshow;
