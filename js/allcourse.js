@@ -25,8 +25,7 @@ function display(selected) {
       <hr>
       <b>費用:<br>
       中一至中三 $950/4堂<br>
-      中四至中六 $1000/4堂<br>
-      (報讀雙科優惠 下期回贈$200、自組小班優惠 最高可享首月半價)</b>`;
+      中四至中六 $1000/4堂</b>`;
   }
   else if (selected == 'math2') {
     texttoshow = `<h1>小學數學呈分試課程</h1><br>
@@ -37,8 +36,7 @@ function display(selected) {
       </ul>
       <hr>
       <b>費用:<br>
-      小三至小六 $900/4堂<br>
-      (報讀雙科優惠 下期回贈$200、自組小班優惠 最高可享首月半價)</b>`;
+      小三至小六 $900/4堂</b>`;
   }
   else if (selected == 'english1') {
     texttoshow = `<h1>中學英文HKDSE課程</h1><br>
@@ -63,8 +61,7 @@ function display(selected) {
       </ul>
       <hr>
       <b>費用:<br>
-      小三至小六 $1600/8堂<br>
-      (雙科優惠 每期即減$100、二人優惠 首期即減$100)</b>`;
+      小三至小六 $1600/8堂</b>`;
   }
   else if (selected == 'english3') {
     texttoshow = `<h1>小學英文進階課程</h1><br>
@@ -75,8 +72,7 @@ function display(selected) {
       </ul>
       <hr>
       <b>費用:<br>
-      小三至小六 $900/4堂<br>
-      (報讀雙科優惠 下期回贈$200、自組小班優惠 最高可享首月半價)</b>`;
+      小三至小六 $900/4堂</b>`;
   }
   else if (selected == 'other1') {
     texttoshow = `<h1>升中3+1面試特訓班</h1><br>
@@ -87,8 +83,7 @@ function display(selected) {
       </ul>
       <hr>
       <b>費用:<br>
-      $950 (3堂+1堂模擬面試)<br>
-      (雙科優惠 每期即減$100、二人優惠 首期即減$100)</b>`;
+      $950 (3堂+1堂模擬面試)</b>`;
   }
   document.getElementById("thetext").innerHTML = texttoshow;
 }
