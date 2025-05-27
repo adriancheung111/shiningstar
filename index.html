@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="./css/shadowbox.css">
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/animate.css">
+  <link rel="stylesheet" href="./css/shining-stars-theme.css">
 
   <style>
 
@@ -25,12 +26,11 @@
 
 <body>
 
-  <!-- =====================================navbar========================================= -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light"
-    style="background-color:white; box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.19);z-index: 10;">
+  <!-- =====================================navbar 重新設計========================================= -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
     <div class="container">
       <a class="navbar-brand" href="./index">
-        <img src="./png/logo.png" width="145px" height="50px" style="margin-bottom: 7px" alt="">
+        <img src="./png/logo1.png" width="145px" height="50px" style="margin-bottom: 7px" alt="Shining Stars">
       </a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -39,35 +39,31 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown" style="justify-content: flex-end;">
         <ul class="navbar-nav">
-          <li class="nav-item active" style="font-weight: bold;">
-            <a class="nav-link" href="./index" data-translate="index">首頁<span class="sr-only">(current)</span></a>
-          </li>
-          <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false" data-translate="course">
-              中小學課程
+          <li class="nav-item active">
+            <a class="nav-link" href="./index" data-translate="index">
+              <i class="fas fa-home"></i> 首頁<span class="sr-only">(current)</span>
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color:#FAFAF2">
-              <a class="dropdown-item" href="./index#math" id="navMath" data-translate="math">數學課程介紹</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="./index#english" id="navEng" data-translate="eng">英文課程介紹</a>
-            </div>
-          </li> -->
-          <li class="nav-item">
-            <a class="nav-link" href="./allcourse" data-translate="allcourse">所有課程</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./teacher" data-translate="teacher">導師簡介</a>
+            <a class="nav-link" href="./allcourse" data-translate="allcourse">
+              <i class="fas fa-book"></i> 所有課程
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./freeapply" data-translate="free">免費試堂/報名</a>
+            <a class="nav-link" href="./teacher" data-translate="teacher">
+              <i class="fas fa-chalkboard-teacher"></i> 導師簡介
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./contactus" data-translate="contact">聯絡我們</a>
+            <a class="nav-link" href="./freeapply" data-translate="free">
+              <i class="fas fa-user-plus"></i> 免費試堂/報名
+            </a>
           </li>
-          <!-- <li class="nav-item">
-          <a class="nav-link" onclick="change_lang()">中/英</a>
-        </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="./contactus" data-translate="contact">
+              <i class="fas fa-envelope"></i> 聯絡我們
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -81,18 +77,15 @@
     <br>
   </div> -->
 
-  <!-- =====================================slider========================================= -->
+  <!-- =====================================slider 純圖片顯示========================================= -->
   <div class="slicklist slick-arrows-inside" style="padding-top:83px;">
-    <!-- style="padding-bottom: 10px; -->
     <a href="./allcourse">
-      <div class="slider-image3"> </div>
+      <div class="slider-image3"></div>
     </a>
     <a href="./freeapply">
-      <div class="slider-image1"> </div>
+      <div class="slider-image1"></div>
     </a>
-    <div class="slider-image2"> </div>
-
-    <!-- <div class="slider-image3"> </div> -->
+    <div class="slider-image2"></div>
   </div>
   <!-- <div class="row slider1">
       <div class="col-md-6">
@@ -136,48 +129,60 @@
         style="width:100% ; max-height: 500px;"></a>
     <a href="./png/teacher3.png" rel="shadowbox"><img src="./png/teacher3.png" alt="Avatar"
         style="width:100% ; max-height: 500px;"></a> -->
-  <!-- =====================================about========================================= -->
+  <!-- =====================================about 重新設計========================================= -->
   <div class="container" id="aboutUsHeader">
     <div style="text-align: center;">
-      <i class="fa fa-school" style="font-size: 28px;display: inline;"> 關於Shining Stars</i>
-      <div style="padding:50px">
-        Shining Star致力採納「小組學習，專科專教」為教學方針。 向中、小學生提供數學及英文科進研補習課程。<br><br>
-
-        團隊培育出數百名學生，導師具有豐富的教學經驗，師資優良，擁有眾多DSE教學經驗，帶領同學於公開試勇奪星級佳績，是我們實力的印證。<br><br>
-
-        我們秉承團隊理念，致力提供先導學習課程，比學校更早率先授學，為同學打穩基礎，突破學習框架。我們更會因應同學的能力施教適合教材，為同學拔尖補底，確保不同能力同學都可以得到最佳的學習體驗。
+      <h2 style="color: var(--primary-blue); font-size: 2.5rem; margin-bottom: 2rem;">
+        <i class="fas fa-star" style="color: var(--primary-gold); margin-right: 15px;"></i>
+        關於Shining Stars
+        <i class="fas fa-star" style="color: var(--primary-gold); margin-left: 15px;"></i>
+      </h2>
+      <div style="padding: 50px; font-size: 1.1rem; line-height: 1.8; max-width: 900px; margin: 0 auto;">
+        <p style="margin-bottom: 2rem;">
+          <strong style="color: var(--primary-blue);">Shining Star</strong>致力採納「<span style="color: var(--primary-gold); font-weight: bold;">小組學習，專科專教</span>」為教學方針。向中、小學生提供數學及英文科進研補習課程。
+        </p>
+        <p style="margin-bottom: 2rem;">
+          團隊培育出<span style="color: var(--primary-gold); font-weight: bold;">數百名學生</span>，導師具有豐富的教學經驗，師資優良，擁有眾多DSE教學經驗，帶領同學於公開試勇奪<span style="color: var(--primary-gold); font-weight: bold;">星級佳績</span>，是我們實力的印證。
+        </p>
+        <p>
+          我們秉承團隊理念，致力提供<span style="color: var(--primary-blue); font-weight: bold;">先導學習課程</span>，比學校更早率先授學，為同學打穩基礎，突破學習框架。我們更會因應同學的能力施教適合教材，為同學拔尖補底，確保不同能力同學都可以得到最佳的學習體驗。
+        </p>
       </div>
     </div>
   </div>
-  <!-- =====================================special========================================= -->
-  <div id="courseSpecHeader" style="background:#FFEC90">
-    <div class="container" style="padding-bottom: 90px">
+
+  <!-- =====================================special 重新設計========================================= -->
+  <div id="courseSpecHeader" style="background: linear-gradient(135deg, var(--primary-gold) 0%, var(--secondary-gold) 100%); position: relative; overflow: hidden;">
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 255, 255, 0.1); z-index: 1;"></div>
+    <div class="container" style="padding-bottom: 90px; position: relative; z-index: 2;">
       <div id="math" style="padding-top:90px;"></div>
       <div class="row">
         <div class="col-12">
-          <div style="font-size: 28px;font-weight: bold;text-align: center;margin-bottom: 20px;color: #000000">
-            中心特點</div>
+          <h2 style="font-size: 2.5rem; font-weight: bold; text-align: center; margin-bottom: 50px; color: var(--primary-blue);">
+            <i class="fas fa-award" style="margin-right: 15px;"></i>
+            中心特點
+            <i class="fas fa-award" style="margin-left: 15px;"></i>
+          </h2>
         </div>
-        <div class="col-md-4" style="margin-bottom:20px">
+        <div class="col-md-4" style="margin-bottom:30px">
           <div class="courseSpec wow fadeInDown" data-wow-delay="0.25s">
-            <p style="font-weight: bold;">豐富經驗</p>
-            <span style="color:#67635A;">確保課程和導師合適同學需要</span>
-            <br>
-            <br>
+            <i class="fas fa-user-graduate" style="font-size: 3rem; color: var(--primary-gold); margin-bottom: 20px;"></i>
+            <p>豐富經驗</p>
+            <span>確保課程和導師合適同學需要</span>
           </div>
         </div>
-        <div class="col-md-4" style="margin-bottom:20px">
+        <div class="col-md-4" style="margin-bottom:30px">
           <div class="courseSpec wow fadeInDown" data-wow-delay="0.50s">
-            <p style="font-weight: bold;">專科專教</p>
-            <span style="color: #67635A;">保證教識同學，非單向操卷、功課班</span>
-            <br>
-            <br>
+            <i class="fas fa-chalkboard-teacher" style="font-size: 3rem; color: var(--primary-gold); margin-bottom: 20px;"></i>
+            <p>專科專教</p>
+            <span>保證教識同學，非單向操卷、功課班</span>
           </div>
         </div>
-        <div class="col-md-4" style="margin-bottom:20px">
+        <div class="col-md-4" style="margin-bottom:30px">
           <div class="courseSpec wow fadeInDown" data-wow-delay="0.75s">
-            <p style="font-weight: bold;">師資優良</p>
-            <span style="color: #67635A;">全部導師均有大學學歷，並有五年以上教學經驗</span>
+            <i class="fas fa-medal" style="font-size: 3rem; color: var(--primary-gold); margin-bottom: 20px;"></i>
+            <p>師資優良</p>
+            <span>全部導師均有大學學歷，並有五年以上教學經驗</span>
           </div>
         </div>
       </div>
@@ -187,26 +192,40 @@
   <!-- =====================================course info========================================= -->
   <div id="english">
     <div class="container" style="padding-top:90px;padding-bottom: 90px">
-      <div id="englishtext" style="font-size: 28px; font-weight: bold; text-align: center;">課程介紹</div>
-      <br>
-      <br>
+      <h2 id="englishtext" style="font-size: 2.5rem; font-weight: bold; text-align: center; color: var(--primary-blue); margin-bottom: 3rem;">
+        <i class="fas fa-graduation-cap" style="color: var(--primary-gold); margin-right: 15px;"></i>
+        課程介紹
+        <i class="fas fa-graduation-cap" style="color: var(--primary-gold); margin-left: 15px;"></i>
+      </h2>
       <div class="row">
         <div class="col-md-6" style="padding-bottom: 30px;">
           <div class="" id="all-course-area">
             <div class="row">
-              <i class="fa fa-calculator col-12" style="font-size: 28px;margin-bottom: 20px;"> 數學</i>
+              <div class="col-12" style="text-align: center; margin-bottom: 25px;">
+                <i class="fas fa-calculator" style="font-size: 3rem; color: var(--primary-gold);"></i>
+                <h3 style="color: var(--primary-blue); margin-top: 15px; font-size: 1.8rem;">數學課程</h3>
+              </div>
               <div class="col-12">
-                中學數學
-                <ul>
-                  <li>依照學校進度量身安排，兼備概念和操練，為同學拔尖補底 </li>
-                  <li>曾教授DSE同學100%達3級或以上成績，多名同學考獲星級成績 </li>
-                </ul>
-                小學數學
-                <ul>
-                  <li>以呈分試為教學方向 </li>
-                  <li>由淺入深為同學講解升中重點課題 </li>
-                  <br>
-                </ul>
+                <div style="margin-bottom: 25px;">
+                  <h4 style="color: var(--primary-blue); font-weight: bold; margin-bottom: 15px;">
+                    <i class="fas fa-star" style="color: var(--primary-gold); margin-right: 8px;"></i>
+                    中學數學
+                  </h4>
+                  <ul style="list-style: none; padding-left: 0;">
+                    <li style="margin-bottom: 10px;">依照學校進度量身安排，兼備概念和操練，為同學拔尖補底</li>
+                    <li style="margin-bottom: 10px;">曾教授DSE同學100%達3級或以上成績，多名同學考獲星級成績</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 style="color: var(--primary-blue); font-weight: bold; margin-bottom: 15px;">
+                    <i class="fas fa-star" style="color: var(--primary-gold); margin-right: 8px;"></i>
+                    小學數學
+                  </h4>
+                  <ul style="list-style: none; padding-left: 0;">
+                    <li style="margin-bottom: 10px;">以呈分試為教學方向</li>
+                    <li style="margin-bottom: 10px;">由淺入深為同學講解升中重點課題</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -214,19 +233,32 @@
         <div class="col-md-6">
           <div class="" id="all-course-area">
             <div class="row">
-              <i class="fa fa-language col-12" style="font-size: 28px;margin-bottom: 20px;"> 英文</i>
+              <div class="col-12" style="text-align: center; margin-bottom: 25px;">
+                <i class="fas fa-language" style="font-size: 3rem; color: var(--primary-gold);"></i>
+                <h3 style="color: var(--primary-blue); margin-top: 15px; font-size: 1.8rem;">英文課程</h3>
+              </div>
               <div class="col-12">
-                中學英文
-                <ul>
-                  <li>獨家詳盡筆記、練習、詞匯表和模擬試題 </li>
-                  <li>詳細改文服務，幫同學改善文筆，提供實用建議 </li>
-                </ul>
-                小學英文
-                <ul>
-                  <li>獨家詳盡筆記、練習、詞匯表 </li>
-                  <li>糾正同學語法讀音</li>
-                  <li>每月最後一課設有溫習單元</li>
-                </ul>
+                <div style="margin-bottom: 25px;">
+                  <h4 style="color: var(--primary-blue); font-weight: bold; margin-bottom: 15px;">
+                    <i class="fas fa-star" style="color: var(--primary-gold); margin-right: 8px;"></i>
+                    中學英文
+                  </h4>
+                  <ul style="list-style: none; padding-left: 0;">
+                    <li style="margin-bottom: 10px;">獨家詳盡筆記、練習、詞匯表和模擬試題</li>
+                    <li style="margin-bottom: 10px;">詳細改文服務，幫同學改善文筆，提供實用建議</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 style="color: var(--primary-blue); font-weight: bold; margin-bottom: 15px;">
+                    <i class="fas fa-star" style="color: var(--primary-gold); margin-right: 8px;"></i>
+                    小學英文
+                  </h4>
+                  <ul style="list-style: none; padding-left: 0;">
+                    <li style="margin-bottom: 10px;">獨家詳盡筆記、練習、詞匯表</li>
+                    <li style="margin-bottom: 10px;">糾正同學語法讀音</li>
+                    <li style="margin-bottom: 10px;">每月最後一課設有溫習單元</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -234,19 +266,26 @@
       </div>
     </div>
 
-    <div id="" style="background:#FFEC90;">
-      <div class="container" style="padding-bottom: 90px">
-        <div id="math" style="padding-top:90px;"></div>
+    <div style="background: linear-gradient(135deg, var(--primary-gold) 0%, var(--secondary-gold) 100%); position: relative; overflow: hidden;">
+      <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 255, 255, 0.1); z-index: 1;"></div>
+      <div class="container" style="padding: 90px 0; position: relative; z-index: 2;">
         <div class="row">
-          <div class="col-12"
-            style="font-size: 28px; font-weight: bold;color: #000000;display:flex; justify-content: center;margin-bottom: 20px;">
-            不同課程推薦</div>
-          <div class="col-12" style="display:flex; justify-content: center;margin-bottom: 20px;color: #67635A;">
-            各種課程提供選擇，歡迎聯絡查詢
-          </div>
-          <div class="col-12" style="display:flex; justify-content: center;">
-            <a class="btn btn-primary" href="./allcourse"
-              style="border-radius: 30px;width: 100px;background-color:#CA0120 ;border: 0px;padding: 10px;">立即查看</a>
+          <div class="col-12" style="text-align: center; margin-bottom: 30px;">
+            <h2 style="font-size: 2.5rem; font-weight: bold; color: var(--primary-blue); margin-bottom: 20px;">
+              <i class="fas fa-rocket" style="margin-right: 15px;"></i>
+              不同課程推薦
+              <i class="fas fa-rocket" style="margin-left: 15px;"></i>
+            </h2>
+            <p style="font-size: 1.3rem; color: var(--text-dark); margin-bottom: 30px;">
+              各種課程提供選擇，歡迎聯絡查詢
+            </p>
+            <div style="margin-bottom: 20px;">
+              <span style="font-size: 2rem; color: var(--primary-blue);">⭐ ⭐ ⭐</span>
+            </div>
+            <a class="btn btn-primary" href="./allcourse" style="font-size: 1.2rem; padding: 15px 40px;">
+              <i class="fas fa-eye" style="margin-right: 10px;"></i>
+              立即查看
+            </a>
           </div>
         </div>
       </div>
@@ -286,29 +325,32 @@
 
   <!-- =====================================bottom========================================= -->
   <div class="bottom-outer">
-    <div class="overlay">
-      <div class="container bottom-inner">
-        <div class="row">
-          <div class="col-sm-6">
-            <h1 style="font-weight: bold;">如何體驗免費和優惠課程</h1>
-            <p>
-              中小學數學英文課程
-              <br>
-              提供免費試堂
-              <br>
-              用心教學 質素保證
-              <br>
-              歡迎聯絡了解
-              <br>
+    <div class="container bottom-inner">
+      <div class="row">
+        <div class="col-sm-6">
+          <h4 style="color: var(--primary-blue); font-weight: bold; margin-bottom: 15px;">
+            <i class="fas fa-star" style="color: #FFD700; margin-right: 10px;"></i>
+            如何體驗免費和優惠課程
+            <i class="fas fa-star" style="color: #FFD700; margin-left: 10px;"></i>
+          </h4>
+          <p>
+            <span style="color: #2C4A6B; font-weight: bold;">⭐ 中小學數學英文課程</span>
+            <br>
+            <span style="color: #2C4A6B; font-weight: bold;">⭐ 提供免費試堂</span>
+            <br>
+            <span style="color: #2C4A6B; font-weight: bold;">⭐ 用心教學 質素保證</span>
+            <br>
+            <span style="color: #2C4A6B; font-weight: bold;">⭐ 歡迎聯絡了解</span>
+            <br>
 
-              <i class="fa fa-home"></i>元朗壽富街元朗中心 6 樓 07 室</br>
-              <button class="btn wow fadeIn animated" id="wtsbtn" data-wow-delay="0.25s"
-                href="https://api.whatsapp.com/send?phone=85264690350"><i class="fa fa-whatsapp"></i>
-                電話/WhatsApp:
-                +852 6469 0350</button>
-            </p>
+            <i class="fas fa-home" style="color: #FFD700;"></i>
+            <h4 style="color: var(--primary-blue);">元朗壽富街元朗中心 6 樓 07 - 08 室</h4></br>
+            <button class="btn wow fadeIn animated" id="wtsbtn" data-wow-delay="0.25s"
+              href="https://api.whatsapp.com/send?phone=85264690350"><i class="fab fa-whatsapp"></i>
+              電話/WhatsApp:
+              +852 6469 0350</button>
+          </p>
 
-          </div>
         </div>
       </div>
     </div>
@@ -329,7 +371,7 @@
           style="background: rgb(81, 205, 94);color: white;display: flex;"><i class="fa fa-whatsapp"></i>
           電話/WhatsApp:
           +852 6469 0350</button>
-        <i class="fa fa-home"></i> 元朗壽富街元朗中心 6 樓 07 室</br>
+        <i class="fa fa-home"></i> 元朗壽富街元朗中心 6 樓 07 - 08 室</br>
       </p> -->
   <!-- ============================================================================== -->
 

@@ -1,9 +1,139 @@
-.nav-link {
-  cursor: pointer;
+/* ========================================
+   SHINING STARS 新主題配色方案
+   主色調：深藍色 #2C4A6B
+   強調色：金黃色 #FFD700
+   輔助色：白色 #FFFFFF
+======================================== */
+
+:root {
+  --primary-blue: #2C4A6B;
+  --primary-gold: #FFD700;
+  --secondary-gold: #FFC107;
+  --light-blue: #4A6B8A;
+  --dark-blue: #1E3A52;
+  --white: #FFFFFF;
+  --light-gray: #F8F9FA;
+  --text-dark: #333333;
+  --shadow-color: rgba(44, 74, 107, 0.15);
 }
 
-.dropdown-item:hover, .nav-link:hover {
+/* 全局樣式重置 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Microsoft JhengHei', 'PingFang TC', 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+}
+
+/* 導航欄樣式 */
+.navbar {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%) !important;
+  box-shadow: 0 2px 20px var(--shadow-color) !important;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand img {
+  filter: brightness(1.2);
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+  transform: scale(1.05);
+}
+
+.nav-link {
   cursor: pointer;
-  color: #333333 !important;
+  color: var(--white) !important;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem !important;
+}
+
+.nav-link:hover {
+  color: var(--primary-gold) !important;
+  transform: translateY(-2px);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--primary-gold);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 80%;
+}
+
+.nav-item.active .nav-link {
+  color: var(--primary-gold) !important;
+  font-weight: bold;
+}
+
+.nav-item.active .nav-link::after {
+  width: 80%;
+}
+
+.dropdown-item:hover {
+  cursor: pointer;
+  color: var(--primary-blue) !important;
+  background-color: var(--light-gray);
+}
+
+/* 星星裝飾元素 */
+.star-decoration {
+  color: var(--primary-gold);
+  font-size: 1.2em;
+  margin: 0 0.5rem;
+  animation: twinkle 2s infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* 按鈕樣式 */
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-gold) 0%, var(--secondary-gold) 100%);
+  border: none;
+  color: var(--primary-blue);
+  font-weight: bold;
+  padding: 12px 30px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+  color: var(--primary-blue);
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--light-blue) 100%);
+  border: none;
+  color: var(--white);
+  font-weight: bold;
+  padding: 12px 30px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px var(--shadow-color);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px var(--shadow-color);
+  color: var(--white);
 }
 

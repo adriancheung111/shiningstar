@@ -1,23 +1,82 @@
+/* 課程頁面重新設計 */
+#differentCourse {
+  background: linear-gradient(135deg, var(--light-gray) 0%, #FFF9E6 100%) !important;
+  min-height: 100vh;
+}
+
 #thetext {
   border-radius: 20px;
-  box-shadow: 0 2px 7px 0 rgb(0 0 0 / 23%);
-  background-color: #fff;
+  box-shadow: 0 10px 30px var(--shadow-color);
+  background: linear-gradient(135deg, var(--white) 0%, var(--light-gray) 100%);
   padding: 60px 50px;
+  border: 2px solid var(--primary-gold);
+  position: relative;
+  overflow: hidden;
+}
+
+#thetext::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, var(--primary-gold) 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.05;
+  animation: float 20s infinite linear;
 }
 
 .btn1 {
-  padding: 20px;
-  background-position: 50%;
-  background-color: white;
-  border: 1px solid #e4e4e4;
-  border-radius: 10px;
+  padding: 25px 20px;
+  background: linear-gradient(135deg, var(--white) 0%, var(--light-gray) 100%);
+  border: 2px solid var(--primary-blue);
+  border-radius: 15px;
   cursor: pointer;
   text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.btn1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.btn1:hover::before {
+  left: 100%;
+}
+
+.btn1 i {
+  color: var(--primary-gold);
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn1:hover i {
+  transform: scale(1.2);
+  color: var(--primary-blue);
 }
 
 .btn1.active, .btn1:hover {
-  background-color: rgb(255, 192, 32, 1);
-  color: white;
+  background: linear-gradient(135deg, var(--primary-gold) 0%, var(--secondary-gold) 100%);
+  color: var(--primary-blue);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(255, 215, 0, 0.3);
+  border-color: var(--primary-blue);
+}
+
+.btn1.active i, .btn1:hover i {
+  color: var(--primary-blue);
 }
 
 @media only screen and (max-width: 768px) {
@@ -35,5 +94,5 @@
 #thetextheader {
   display: block;
   visibility: hidden;
-  
+
 }

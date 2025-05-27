@@ -1,0 +1,210 @@
+/* ========================================
+   SHINING STARS 完整主題樣式
+   基於您提供的深藍色+金黃色配色方案
+======================================== */
+
+/* 全局樣式增強 */
+body {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+/* 標題樣式統一 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Microsoft JhengHei', 'PingFang TC', sans-serif;
+}
+
+/* 區塊標題樣式 */
+.section-title {
+  position: relative;
+  display: inline-block;
+  padding: 0 30px;
+}
+
+.section-title::before,
+.section-title::after {
+  content: '⭐';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--primary-gold);
+  font-size: 1.5em;
+  animation: twinkle 2s infinite;
+}
+
+.section-title::before {
+  left: 0;
+}
+
+.section-title::after {
+  right: 0;
+}
+
+/* 卡片樣式增強 */
+.card-enhanced {
+  background: linear-gradient(135deg, var(--white) 0%, var(--light-gray) 100%);
+  border: 2px solid transparent;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px var(--shadow-color);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-enhanced::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-gold), var(--secondary-gold));
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.card-enhanced:hover::before {
+  transform: scaleX(1);
+}
+
+.card-enhanced:hover {
+  transform: translateY(-10px);
+  border-color: var(--primary-gold);
+  box-shadow: 0 20px 40px rgba(255, 215, 0, 0.2);
+}
+
+/* 按鈕樣式增強 */
+.btn-star {
+  background: linear-gradient(135deg, var(--primary-gold) 0%, var(--secondary-gold) 100%);
+  border: none;
+  color: var(--primary-blue);
+  font-weight: bold;
+  padding: 15px 35px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(255, 215, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-star::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.btn-star:hover::before {
+  left: 100%;
+}
+
+.btn-star:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+  color: var(--primary-blue);
+}
+
+/* 星星背景動畫 */
+.stars-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.stars-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(2px 2px at 20px 30px, var(--primary-gold), transparent),
+    radial-gradient(2px 2px at 40px 70px, var(--primary-gold), transparent),
+    radial-gradient(1px 1px at 90px 40px, var(--primary-gold), transparent),
+    radial-gradient(1px 1px at 130px 80px, var(--primary-gold), transparent),
+    radial-gradient(2px 2px at 160px 30px, var(--primary-gold), transparent);
+  background-repeat: repeat;
+  background-size: 200px 100px;
+  animation: stars-move 20s linear infinite;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+@keyframes stars-move {
+  0% { transform: translateX(0) translateY(0); }
+  100% { transform: translateX(-200px) translateY(-100px); }
+}
+
+/* 漸變文字效果 */
+.gradient-text {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
+}
+
+/* 響應式改進 */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+    padding: 0 20px;
+  }
+  
+  .section-title::before,
+  .section-title::after {
+    font-size: 1.2em;
+  }
+  
+  .btn-star {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+  
+  .card-enhanced {
+    margin-bottom: 20px;
+  }
+}
+
+/* 滾動條樣式 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-gray);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, var(--primary-gold) 0%, var(--secondary-gold) 100%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, var(--secondary-gold) 0%, var(--primary-gold) 100%);
+}
+
+/* 載入動畫 */
+.loading-star {
+  display: inline-block;
+  animation: spin-star 2s linear infinite;
+}
+
+@keyframes spin-star {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* 特殊效果 */
+.glow-effect {
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+  animation: glow-pulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow-pulse {
+  from { box-shadow: 0 0 20px rgba(255, 215, 0, 0.5); }
+  to { box-shadow: 0 0 30px rgba(255, 215, 0, 0.8); }
+}

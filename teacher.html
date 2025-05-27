@@ -9,59 +9,56 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/4516845b90.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/teacher.css">
+  <link rel="stylesheet" href="./css/shining-stars-theme.css">
 
 </head>
 
- <!-- =====================================navbar========================================= -->
- <nav class="navbar fixed-top navbar-expand-lg navbar-light"
- style="background-color:white; box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.19);z-index: 10;">
- <div class="container">
-   <a class="navbar-brand" href="./index">
-     <img src="./png/logo.png" width="145px" height="50px" style="margin-bottom: 7px" alt="">
-   </a>
+ <!-- =====================================navbar 重新設計========================================= -->
+ <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+   <div class="container">
+     <a class="navbar-brand" href="./index">
+       <img src="./png/logo.png" width="145px" height="50px" style="margin-bottom: 7px" alt="Shining Stars">
+       <span class="star-decoration">⭐</span>
+     </a>
 
-   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-     <span class="navbar-toggler-icon"></span>
-   </button>
-   <div class="collapse navbar-collapse" id="navbarNavDropdown" style="justify-content: flex-end;">
-     <ul class="navbar-nav">
-       <li class="nav-item">
-         <a class="nav-link" href="./index" data-translate="index">首頁<span class="sr-only">(current)</span></a>
-       </li>
-       <!-- <li class="nav-item dropdown">
-         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-           aria-haspopup="true" aria-expanded="false" data-translate="course">
-           中小學課程
-         </a>
-         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color:#FAFAF2">
-           <a class="dropdown-item" href="./index#math" id="navMath" data-translate="math">數學課程介紹</a>
-           <div class="dropdown-divider"></div>
-           <a class="dropdown-item" href="./index#english" id="navEng" data-translate="eng">英文課程介紹</a>
-         </div>
-       </li> -->
-       <li class="nav-item">
-         <a class="nav-link" href="./allcourse" data-translate="allcourse">所有課程</a>
-       </li>
-       <li class="nav-item active" style="font-weight: bold;">
-         <a class="nav-link" href="./teacher" data-translate="teacher">導師簡介</a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link" href="./freeapply" data-translate="free">免費試堂/報名</a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link" href="./contactus" data-translate="contact">聯絡我們</a>
-       </li>
-       <!-- <li class="nav-item">
-       <a class="nav-link" onclick="change_lang()">中/英</a>
-     </li> -->
-     </ul>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarNavDropdown" style="justify-content: flex-end;">
+       <ul class="navbar-nav">
+         <li class="nav-item">
+           <a class="nav-link" href="./index" data-translate="index">
+             <i class="fas fa-home"></i> 首頁<span class="sr-only">(current)</span>
+           </a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="./allcourse" data-translate="allcourse">
+             <i class="fas fa-book"></i> 所有課程
+           </a>
+         </li>
+         <li class="nav-item active">
+           <a class="nav-link" href="./teacher" data-translate="teacher">
+             <i class="fas fa-chalkboard-teacher"></i> 導師簡介
+           </a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="./freeapply" data-translate="free">
+             <i class="fas fa-user-plus"></i> 免費試堂/報名
+           </a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="./contactus" data-translate="contact">
+             <i class="fas fa-envelope"></i> 聯絡我們
+           </a>
+         </li>
+       </ul>
+     </div>
    </div>
- </div>
-</nav>
+ </nav>
 <!-- end navbar -->
 
 <div class="hero-image">
@@ -122,7 +119,7 @@
       </div>
     </div>
 
-   
+
   </div>
 </div>
 
